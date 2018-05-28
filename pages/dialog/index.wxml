@@ -1,0 +1,39 @@
+<!--components/dialog/index.wxml-->
+<view class='container' style="display: {{isShow ? '' : 'none'}}">
+  <view class='c-title'>
+    <text>提示信息</text>
+  </view>
+  <view class='c-content'>
+    <view wx:if="{{isPass}}">
+      <view>
+        <text>{{isOver ? '恭喜你通关了':'恭喜回答正确！'}}</text>
+      </view>
+    </view>
+    <view wx:else>
+      <view>
+        <text>回答错误，要不再试试？</text>
+      </view>
+    </view>
+  </view>
+
+  <view class='c-btn'>
+
+    <view wx:if="{{!isOver}}">
+        <view class="btn-success" wx:if="{{isPass}}" bindtap='onNext'>
+            <image class='next-idiom' mode='widthFix' src='../images/next_idiom.png'></image>
+        </view>
+        <view class='btn-error' wx:else>
+          <view class='btn-retry' bindtap='onRetry'>
+            <image class='again-test' mode='widthFix' src='../images/again_test.png'></image>
+          </view>
+          <view class="btn-ignore" bindtap='onNext'>
+            <image class='next-idiom' mode='widthFix' src='../images/next_idiom.png'></image>
+          </view>
+        </view>
+    </view>
+    <view wx:else>
+        <image class='next-idiom' mode='widthFix' bindtap='onDone' src='../images/idiom_over.png'></image>
+    </view>
+   
+  </view>
+</view>

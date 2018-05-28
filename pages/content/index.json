@@ -1,0 +1,7 @@
+{
+  "navigationBarBackgroundColor": "#e4e4e4",
+  "backgroundColor": "#e4e4e4",
+  "usingComponents": {
+    "dialog": "/pages/dialog/index"
+  }
+}

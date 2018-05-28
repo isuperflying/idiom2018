@@ -1,0 +1,4 @@
+<!--pages/home/home.wxml-->
+<view class='start-bg'>
+  <image src='../images/start_bg.png' class='start-img' bindtap='start' mode='widthFix'></image>
+</view>
