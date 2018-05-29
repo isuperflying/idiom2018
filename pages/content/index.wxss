@@ -85,7 +85,7 @@ page {
 }
 
 .content-img {
-  width: 240rpx;
+  width: 260rpx;
   /* border-radius: 8rpx;
   border: #f2f2f2;
   border-style: solid;

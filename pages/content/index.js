@@ -221,7 +221,7 @@ Page({
       title: '成语大猜想',
     })
 
-    page = parseInt(Math.random() * 10);
+    page = parseInt(Math.random() * 15);
 
     currentIndex = 0;
     //生成随机排序辅助数组
