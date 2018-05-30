@@ -3,6 +3,7 @@ var allSelected = require('../../utils/data.js')
 var currentIndex = 0;
 var allData;
 var page = 0;
+var currentUrl;
 Page({
 
   /**
@@ -275,10 +276,12 @@ Page({
 
   },
 
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
-  }
+  onShareAppMessage: function (res) {
+   
+    return {
+      title: '快来发挥你的想象力猜猜看吧',
+      path: '/pages/content/index',
+      imageUrl: this.data.curImgUrl
+    }
+  },
 })

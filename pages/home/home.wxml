@@ -1,4 +1,9 @@
 <!--pages/home/home.wxml-->
 <view class='start-bg'>
   <image src='../images/start_bg.png' class='start-img' bindtap='start' mode='widthFix'></image>
+  <view class='more-version' bindtap='version'>
+    <text class='is-version'>免责声明</text>
+    <image class='version-img' src='../images/version_icon.png'></image>
+  </view>
 </view>
+

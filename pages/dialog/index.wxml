@@ -6,12 +6,12 @@
   <view class='c-content'>
     <view wx:if="{{isPass}}">
       <view>
-        <text>{{isOver ? '恭喜你通关了':'恭喜回答正确！'}}</text>
+        <text>{{isOver ? '太厉害了，你通关了':'恭喜回答正确！'}}</text>
       </view>
     </view>
     <view wx:else>
       <view>
-        <text>回答错误，要不再试试？</text>
+        <text>回答错误，再试试？</text>
       </view>
     </view>
   </view>
